@@ -32,14 +32,14 @@ double lagrangeInterpolation(const std::vector<int>& x, const std::vector<long l
 
 int main() {
     std::ifstream inputFile("test_cases.json");
-    json testCases;
+    json test;
 
     if (!inputFile.is_open()) {
         std::cerr << "Failed to open file." << std::endl;
         return 1;
     }
 
-    inputFile >> testCases;
+    inputFile >> test;
     inputFile.close();
 
     // Loop through each test case
